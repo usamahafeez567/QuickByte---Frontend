@@ -14,7 +14,6 @@ export default function Home() {
               <span
                 style={{
                   fontSize: "80px",
-                  letterSpacing: "0em",
                   color: "#56e39f",
                 }}
               >
