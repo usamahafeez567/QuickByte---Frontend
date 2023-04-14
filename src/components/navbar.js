@@ -106,9 +106,9 @@ export default function Navbar() {
       <style>
         {`
       .btn-outline-dark:hover {
-        color: #56E39F;
-        background-color: #063F71;
-        border-color: #56E39F;
+        color: #063F71 !important;
+        background-color: #56E39F !important;
+        border-color: #56E39F !important;
       }
       .color_18 {
         color: #56e39f;
