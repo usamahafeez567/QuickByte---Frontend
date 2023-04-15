@@ -85,7 +85,11 @@ export default function Navbar() {
                 onClick={() => {
                   navi("/login");
                 }}
-                style={{ color: "#56E39F", borderColor: "#56E39F" }}
+                style={{
+                  color: "#56E39F",
+                  borderColor: "#56E39F",
+                  borderRadius: "20px",
+                }}
               >
                 Sign In
               </button>
@@ -95,7 +99,11 @@ export default function Navbar() {
                 onClick={() => {
                   navi("/signup");
                 }}
-                style={{ color: "#56E39F", borderColor: "#56E39F" }}
+                style={{
+                  color: "#56E39F",
+                  borderColor: "#56E39F",
+                  borderRadius: "20px",
+                }}
               >
                 Sign Up
               </button>

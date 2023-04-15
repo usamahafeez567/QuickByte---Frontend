@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Services() {
-  return <div>Our Services</div>;
+export default function services() {
+  return <div>services</div>;
 }
