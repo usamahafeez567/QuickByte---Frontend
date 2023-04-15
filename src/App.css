@@ -5,7 +5,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .App {
   background: #063f71;
+  min-height: 90vh;
 }
