@@ -55,7 +55,7 @@ export default function contact() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 mb-5 px-4">Contact Us Form</div>
+          <div className="col-lg-6 col-md-6 mb-5 px-4">Contact Us From here</div>
         </div>
       </div>
       <style>
