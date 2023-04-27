@@ -78,6 +78,7 @@ export default function Login(props) {
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
+                  <i class="bi bi-envelope-fill me-2"></i>
                   Email:
                 </label>
                 <input
@@ -91,6 +92,7 @@ export default function Login(props) {
               </div>
               <div className="mb-3">
                 <label htmlFor="password" className="form-label">
+                  <i class="bi bi-lock-fill me-1"></i>
                   Password:
                 </label>
                 <input

@@ -7,7 +7,7 @@ import About from "./components/about";
 import Home from "./components/home";
 import Login from "./components/login";
 import Dashboard from "./components/dashboard";
-import Services from "./components/services";
+import Product from "./components/product";
 import "./App.css";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Routes>
               <Route exact path="/" Component={Home}></Route>
               <Route path="/about" Component={About}></Route>
-              <Route path="/services" Component={Services}></Route>
+              <Route path="/product" Component={Product}></Route>
               <Route path="/contact" Component={Contact}></Route>
               <Route path="/signup" Component={Signup}></Route>
               <Route path="/login" Component={Login}></Route>

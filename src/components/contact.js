@@ -23,7 +23,7 @@ export default function contact() {
             <div className="p-4 rounded body-map">
               <iframe
                 className="w-100 rounded mb-4 shadow"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217759.99380853778!2d74.3343893!3d31.482940349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1662489996033!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13614.025735945812!2d74.2755957!3d31.4552522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045972400001%3A0x7066546ac8abe2e7!2sPureLogics!5e0!3m2!1sen!2s!4v1682599246149!5m2!1sen!2s"
                 height="350px"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -36,7 +36,8 @@ export default function contact() {
                 rel="noopener noreferrer"
                 className="d-inline-block text-white text-decoration-none"
               >
-                <i className="bi bi-geo-alt-fill"></i> Lahore, Punjab, Pakistan
+                <i className="bi bi-geo-alt-fill"></i> 874 R1 Johar Town,
+                Lahore, Pakistan
               </a>
               <h5 className="mt-3 custom-color-tag">Contact Us</h5>
               <a
@@ -46,7 +47,7 @@ export default function contact() {
                 <i className="bi bi-telephone-fill"></i>+923001234567
               </a>
 
-              <h5 className="mt-3 custom-color-tag">Email</h5>
+              <h5 className="mt-2 custom-color-tag">Email</h5>
               <a
                 href="mailto:bc180200378@vu.edu.pk"
                 className="d-inline-block text-decoration-none text-white"
@@ -55,7 +56,43 @@ export default function contact() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 mb-5 px-4">Contact Us Form</div>
+          <div className="col-lg-6 col-md-6 mb-5 px-4">
+            <div className="p-4 rounded body-map">
+              <form>
+                <h4 className="custom-color-tag">Let's Get In Touch</h4>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">Name:</label>
+                  <input type="text" className="form-control rounded-pill" />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">Email:</label>
+                  <input type="email" className="form-control rounded-pill" />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">
+                    Phone Number:
+                  </label>
+                  <input
+                    type="tel"
+                    id="typePhone"
+                    className="form-control rounded-pill"
+                  />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">
+                    Comment:
+                  </label>
+                  <textarea className="form-control" rows="7"></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn mt-4 custom-btn rounded-pill"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <style>
@@ -76,6 +113,18 @@ export default function contact() {
             }
             .custom-color-tag{
                 color: #56e39f;
+            }
+            .custom-btn:hover {
+                color: #063f71 !important;
+                background-color: #56e39f !important;
+                border-color: #56e39f !important;
+            }
+            .custom-btn{
+                
+            color: #56E39F;
+            background-color: #063F71;
+            border: 1px solid #56E39F;
+            border-radius: 20px;
             }
         `}
       </style>

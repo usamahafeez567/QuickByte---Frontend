@@ -53,10 +53,10 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   className="nav-link me-2"
-                  to="/services"
+                  to="/product"
                   style={{ color: "#56E39F" }}
                 >
-                  Our Service
+                  Our Product
                 </Link>
               </li>
               <li className="nav-item">
@@ -91,6 +91,7 @@ export default function Navbar() {
                   borderRadius: "20px",
                 }}
               >
+                <i class="bi bi-person-circle me-2"></i>
                 Sign In
               </button>
               <button
@@ -105,6 +106,7 @@ export default function Navbar() {
                   borderRadius: "20px",
                 }}
               >
+                <i class="bi bi-person-plus-fill me-2"></i>
                 Sign Up
               </button>
             </div>
