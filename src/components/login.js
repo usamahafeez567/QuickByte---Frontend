@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { Button, Modal } from "react-bootstrap";
 
 export default function Login(props) {
   const navi = useNavigate();
@@ -8,23 +7,24 @@ export default function Login(props) {
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  // const [showModal, setShowModal] = useState(false);
-
+  // Form validation logic
   function validate() {
     let emailError = "";
     let passwordError = "";
-
-    if (!email.includes("@")) {
+    // Check for valid email format
+    if (!email.trim()) {
+      emailError = "Email is Required";
+    } else if (!email.includes("@")) {
       emailError = "Invalid email";
     }
-
+    // Check for empty password
     if (password.length < 8) {
       passwordError = "Password must be at least 8 characters";
     }
 
     setEmailError(emailError);
     setPasswordError(passwordError);
-
+    // If there are no errors, return true for valid form
     if (emailError || passwordError) {
       return false;
     }
@@ -48,7 +48,6 @@ export default function Login(props) {
     const isValid = validate();
 
     if (isValid) {
-      // setShowModal(true);
       console.log("Email: ", email);
       console.log("Password: ", password);
       navi("/dashboard");
@@ -78,11 +77,7 @@ export default function Login(props) {
 
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label
-                  htmlFor="email"
-                  className="form-label"
-                  style={{ color: "#56E39F" }}
-                >
+                <label htmlFor="email" className="form-label">
                   Email:
                 </label>
                 <input
@@ -94,7 +89,7 @@ export default function Login(props) {
                   onChange={handleEmailChange}
                 />
               </div>
-              <div className="mb-3" style={{ color: "#56E39F" }}>
+              <div className="mb-3">
                 <label htmlFor="password" className="form-label">
                   Password:
                 </label>
@@ -122,7 +117,7 @@ export default function Login(props) {
               </button>
               <br />
               <button
-                className="btn btn-light mt-3"
+                className="btn btn-light mt-3 "
                 type="submit"
                 style={{
                   color: "#56E39F",
@@ -137,7 +132,7 @@ export default function Login(props) {
           </div>
         </div>
       </div>
-
+      {/* Internal Page CSS */}
       <style>
         {`
         
@@ -149,7 +144,7 @@ export default function Login(props) {
       .container {
         position: relative;
         width: 100%;
-        min-height: 90vh;
+        min-height: 100vh;
       }
       
       .body-login {
@@ -160,6 +155,9 @@ export default function Login(props) {
       .custom-alert {
         background-color: #56E39F;
         color: #032039;
+      }
+      .form-label{
+        color: #56E39F;
       }
     `}
       </style>
