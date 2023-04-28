@@ -56,7 +56,43 @@ export default function contact() {
               </a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 mb-5 px-4">Contact Us Form</div>
+          <div className="col-lg-6 col-md-6 mb-5 px-4">
+            <div className="p-4 rounded body-map">
+              <form>
+                <h4 className="custom-color-tag">Let's Get In Touch</h4>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">Name:</label>
+                  <input type="text" className="form-control rounded-pill" />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">Email:</label>
+                  <input type="email" className="form-control rounded-pill" />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">
+                    Phone Number:
+                  </label>
+                  <input
+                    type="tel"
+                    id="typePhone"
+                    className="form-control rounded-pill"
+                  />
+                </div>
+                <div className="mt-3">
+                  <label className="form-label custom-color-tag">
+                    Comment:
+                  </label>
+                  <textarea className="form-control" rows="7"></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn mt-4 custom-btn rounded-pill"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <style>
